@@ -17,7 +17,7 @@ class Solution:
         f, l = first(nums,target), last(nums, target)
         return [f,l]
 
-a = [5,7,7,8,8,10]
-target = 6
+a = [9,5,7,7,8,8,9,10,9,-1]
+target = -1
 
 print(Solution.searchRange(a, target))
