@@ -1,4 +1,4 @@
-def merge_the_tools(string: str, k: str) -> str:
+def merge_the_tools(string: str, k: str) -> None:
     pass
 
 if __name__ == '__main__':
