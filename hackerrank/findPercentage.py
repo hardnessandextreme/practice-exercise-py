@@ -1,6 +1,3 @@
-def findPercentage():
-    pass
-
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
@@ -9,3 +6,6 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
+
+    query_scores = student_marks[query_name]
+    print(f"{sum(query_scores)/len(query_scores):.2f}")
