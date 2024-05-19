@@ -23,6 +23,7 @@ def reversa(lista: list) -> None:
 if __name__ == '__main__':
     N = int(input())
     lista = []
+    pusado = []
 
     for _ in range(N):
         linea = input().split()
@@ -33,7 +34,8 @@ if __name__ == '__main__':
             numero = int(linea[2])
             insertar(lista, numero, index)
         elif comando == "print":
-            imprimir(lista)
+            listo = lista.copy()
+            pusado.append(listo)
         elif comando == "remove":
             numero = int(linea[1])
             remover(lista, numero)
@@ -46,5 +48,8 @@ if __name__ == '__main__':
             desaparecer(lista)
         elif comando == "reverse":
             reversa(lista)
+        
+    for i in pusado:
+        print(i)
 
         #print(comando, index, numero)
